@@ -16,7 +16,7 @@
     --light-green-color: #c0eb7b;
     --orange-color: #ff7e00;
     --light-orange-color: #f75f1d;
-    --text-xolor: #1a2428;
+    --text-color: #1a2428;
     --bg-color: #fff;
 }
 
@@ -42,6 +42,7 @@ img {
 
 body {
     color: var(--text-color);
+    background: var(--bg-color);
 }
 
 header {
@@ -126,7 +127,7 @@ header {
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(background.png);
+    background: url(img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -149,7 +150,7 @@ header {
 
 .home-text span {
     font-weight: 400;
-    text-transform: upparcase;
+    text-transform: uppercase;
     color: var(--green-color);
 
 }
@@ -186,6 +187,16 @@ header {
 .btn:hover {
     background: var(--light-orange-color);
     transition: 0.2s ease;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-button-next {
@@ -403,7 +414,7 @@ header {
 }
 
 .about-text p {
-    margin: o.5rem 0 1rem;
+    margin: 0.5rem 0 1rem;
 }
 
 .customers {
@@ -541,6 +552,7 @@ header {
     background: transparent;
     border: none;
     outline: none;
+    width: 100%;
 }
 
 .footer-box form .bx {
@@ -657,7 +669,7 @@ header {
     }
 
     .heading h1 {
-        font-size: 1, 2rem;
+        font-size: 1.2rem;
     }
 
     .about {
